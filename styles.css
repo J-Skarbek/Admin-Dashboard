@@ -56,6 +56,7 @@ table {
     --medium-green: #A2EBB3;
     --dark-green: #4AED75;
     --white: #fff;
+    --light-grey: #f1f1f1;
     --off-white: #E1F3FA;
     --black: #000;
     --dark-blush: #91604E;
@@ -74,6 +75,14 @@ h6 {
 
 h1 {
     font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.3rem;
 }
 
 p, 
@@ -121,10 +130,28 @@ span {
 }
 
 .top-bar {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column: 3 / span 9;
     grid-row: 1 / span 2;
     background-color: var(--off-white);
+    padding: 3%;
+}
+
+.top-bar-1 {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+    /* display: flex;
+    justify-content: space-around; */
+    margin-bottom: 5%;
+}
+
+.top-bar-2 {
+    grid-column: 1 / span 12;
+    grid-row: 2 / span 1;
+    display: flex;
+    justify-content: space-around;
 }
 
 .main-content {
@@ -133,16 +160,63 @@ span {
     grid-template-rows: repeat(12, 50px);
     grid-column: 3 / span 9;
     grid-row: 3/ span 9;
+    padding: 2%;
+    background-color: var(--light-grey);
+}
+
+#your-projects-header {
+    grid-column: 1 / span 10;
+    grid-row: 1 / span 1;
+    margin-left: 5%;
+    display:flex;
+    align-items: center;
 }
 
 .projects-col-1 {
     grid-column: 1 / span 5;
-    grid-row: 1 / span 12;
+    grid-row: 2 / span 11;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
 }
 
 .projects-col-2 {
     grid-column: 6 / span 5;
-    grid-row: 1 / span 12;
+    grid-row: 2 / span 11;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    background-color: var(--white);
+    padding: 10%;
+    margin: 5% 10%;
+    box-shadow: 5px 4px 4px 0 rgba(0,0,0, .25);
+    border-radius: 25px;
+    border-left: 6px solid var(--dark-blush);
+}
+
+.cards h4 {
+    padding-bottom: 5%;
+}
+
+.cards p {
+    padding-bottom: 10%;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card-icon {
+    padding-right: 2%;
+}
+
+.cards img {
+    width: 36px;
+    height: auto;
 }
 
 .projects-sidebar {
