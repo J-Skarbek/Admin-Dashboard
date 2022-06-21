@@ -46,3 +46,18 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+:root {
+    --dark-blue: #4AB0ED;
+    --medium-blue: #A2D2EB;
+    --light-blue: #A9EFF5;
+    --bluish-green: #A6DFD4;
+    --light-green: #A9F5D0;
+    --medium-green: #A2EBB3;
+    --dark-green: #4AED75;
+    --white: #fff;
+    --off-white: #E1F3FA;
+    --black: #000;
+    --dark-blush: #91604E;
+    --light-blush: #DEB4A4;
+}
