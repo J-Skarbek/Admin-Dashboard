@@ -133,7 +133,7 @@ span {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column: 3 / span 9;
+    grid-column: 3 / span 10;
     grid-row: 1 / span 2;
     background-color: var(--off-white);
     padding: 3%;
@@ -158,8 +158,8 @@ span {
     display: grid;
     grid-template-columns: repeat(12, minmax(50px, 1fr));
     grid-template-rows: repeat(12, 50px);
-    grid-column: 3 / span 9;
-    grid-row: 3/ span 9;
+    grid-column: 3 / span 10;
+    grid-row: 3/ span 10;
     padding: 2%;
     background-color: var(--light-grey);
 }
