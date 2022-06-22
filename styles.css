@@ -132,6 +132,20 @@ span {
     height: auto;
 }
 
+.side-menu img {
+    padding-right: 5%;
+}
+
+.side-menu a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.side-menu a:hover {
+    color: var(--dark-blush);
+    text-decoration: underline;
+}
+
 /* Top section/search/profile area */
 
 .top-bar {
@@ -191,7 +205,8 @@ span {
 }
 
 
-img.search-glass {
+img.search-glass,
+.side-menu img {
     width: 24px;
     height: auto;
 }
