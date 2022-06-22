@@ -222,7 +222,6 @@ button.actions:hover {
     border-color: var(--medium-blue);
 }
 
-
 img.search-glass,
 .side-menu img {
     width: 24px;
@@ -264,7 +263,8 @@ span.hello-user-msg {
 .main-content {
     display: grid;
     grid-template-columns: repeat(12, minmax(50px, 1fr));
-    grid-template-rows: 50px repeat(11, 100px);
+    /* grid-template-rows: 50px repeat(10, 100px); */
+    grid-template-rows: 50px repeat(4, 100px) 50px repeat(4, 100px);
     grid-column: 3 / span 10;
     grid-row: 3/ span 10;
     padding: 2%;
@@ -285,7 +285,7 @@ span.hello-user-msg {
     grid-row: 2 / span 10;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
+    justify-content: space-around;
 }
 
 .projects-col-2 {
@@ -293,12 +293,13 @@ span.hello-user-msg {
     grid-row: 2 / span 10;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .cards {
     background-color: var(--white);
     padding: 10%;
-    margin: 5% 10%;
+    margin: 5%;
     box-shadow: 5px 4px 4px 0 rgba(0,0,0, .25);
     border-radius: 25px;
     border-left: 6px solid var(--dark-blush);
@@ -308,11 +309,12 @@ span.hello-user-msg {
     padding-bottom: 5%;
 }
 
-.cards p,
-p.announcement{
+
+.cards p {
     font-size: .9rem;
     padding-bottom: 10%;
 }
+
 
 .card-icons {
     display: flex;
@@ -334,7 +336,7 @@ p.announcement{
 .projects-sidebar {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 100px) 50px repeat(5, 100px);
+    grid-template-rows: repeat(4, 100px) 50px repeat(4, 100px);
     grid-column: 9 / span 4;
     grid-row: 2 / span 10;
 }
@@ -348,28 +350,63 @@ p.announcement{
 .main-sidebar-title-1 {
     grid-column: 9 / span 4;
     grid-row: 1 / span 1;
+    padding-left: 5%;
 }
 
 .announcements-box {
     grid-row: 1 / span 4;
 }
 
+.annouce-box {
+    font-size: .9rem;
+    padding-bottom: 5%;
+    margin-bottom: 3%;
+    border-bottom: 2px var(--light-grey) solid;
+}
+
 .annouce-box h4 {
+    padding-bottom: 3%;
     text-overflow: ellipsis;
 }
 
 .main-sidebar-title-2 {
     grid-row: 5 / span 1;
+    padding-left: 5%;
 }
 
 .trending-stuff {
     grid-row: 6 / span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trending-stuff > div {
+    display: flex;
+}
+
+.trending-box {
+    font-size: 1.3rem;
+    padding: 0 0 5% 5%;
+}
+
+.trending-box p {
+    padding-left: 5%;
+    line-height: 1.3;
+}
+.trending-stuff img {
+    width: 48px;
+    height: fit-content;
+}
+
+span.indv-user {
+    font-weight: 500;
 }
 
 .projects-sidebar > div:nth-child(2n+1) {
     background-color: var(--white);
-    padding: 10%;
-    margin: 5% 10%;
+    padding: 5%;
+    margin: 5%;
     border-radius: 20px;
     box-shadow: 5px 4px 4px 0 rgba(0,0,0, .25);
 }
