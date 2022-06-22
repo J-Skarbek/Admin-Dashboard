@@ -159,6 +159,16 @@ span {
     justify-content: space-around;
 }
 
+img.search-glass {
+    width: 24px;
+    height: auto;
+}
+
+.top-bar-profile > img {
+    width: 48px;
+    height: auto;
+}
+
 /* Styling the contents of the main-content box. */
 
 .main-content {
