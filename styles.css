@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/*CSS Reset and general stylings */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,6 +60,10 @@ table {
     --light-blush: #DEB4A4;
 }
 
+body {
+    background-color: var(--dark-blue);
+}
+
 h1,
 h2,
 h3,
@@ -93,12 +94,14 @@ span {
 }
 
 .project-container {
-    width: 1400px;
+    width: 1600px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, minmax(125px, 150px));
     grid-template-rows: repeat(12, 100px);
 }
+
+/* Left-side off-canvas like menu */
 
 .side-menu {
     display: flex;
@@ -129,6 +132,8 @@ span {
     height: auto;
 }
 
+/* Top section/search/profile area */
+
 .top-bar {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -153,6 +158,8 @@ span {
     display: flex;
     justify-content: space-around;
 }
+
+/* Styling the contents of the main-content box. */
 
 .main-content {
     display: grid;
@@ -201,6 +208,7 @@ span {
 }
 
 .cards p {
+    font-size: .9rem;
     padding-bottom: 10%;
 }
 
@@ -219,11 +227,15 @@ span {
     height: auto;
 }
 
+/* Main content box's right-sidebar area. */
+
 .projects-sidebar {
     grid-column: 11 / span 2;
     grid-row: 1 / span 12;
 }
 
-.cards p {
-    font-size: .9rem;
+.projects-sidebar > div {
+    background-color: var(--white);
+    padding: 10% 10%;
 }
+
