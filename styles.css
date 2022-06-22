@@ -196,9 +196,28 @@ img.search-glass {
     height: auto;
 }
 
-.top-bar-profile > img {
+img.profile-pic {
     width: 48px;
     height: auto;
+}
+
+input#search-input {
+    width: 75%;
+    margin-left: 2%;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--light-grey);
+}
+
+.top-bar2-profile p {
+    font-weight: 700;
+    line-height: 1.5;
+    padding-left: 2%;
+}
+
+span.hello-user-msg {
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 /* Styling the contents of the main-content box. */
