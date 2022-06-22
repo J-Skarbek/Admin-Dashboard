@@ -137,7 +137,7 @@ span {
 .top-bar {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50px);
     grid-column: 3 / span 10;
     grid-row: 1 / span 2;
     background-color: var(--off-white);
@@ -207,7 +207,8 @@ span {
     padding-bottom: 5%;
 }
 
-.cards p {
+.cards p,
+p.announcement{
     font-size: .9rem;
     padding-bottom: 10%;
 }
@@ -232,7 +233,7 @@ span {
 .projects-sidebar {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 100px);
+    grid-template-rows: repeat(10, 100px);
     grid-column: 9 / span 4;
     grid-row: 1 / span 8;
 }
@@ -250,17 +251,22 @@ span {
     grid-row: 2 / span 3;
 }
 
+.annouce-box h4 {
+    text-overflow: ellipsis;
+}
+
 .main-sidebar-title-2 {
-    grid-row: 5 / span 1;
+    grid-row: 6 / span 1;
 }
 
 .trending-stuff {
-    grid-row: 6 / span 3;
+    grid-row: 7 / span 3;
 }
 
 .projects-sidebar > div:nth-child(2n) {
     background-color: var(--white);
     padding: 10%;
+    margin: 5% 10%;
     border-radius: 20px;
     box-shadow: 5px 4px 4px 0 rgba(0,0,0, .25);
 }
